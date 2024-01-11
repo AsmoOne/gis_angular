@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-button {
+.button {
     display: inline-block;
     outline: none;
     cursor: pointer;
@@ -22,10 +22,11 @@ button {
     line-height: 30px;
     font-weight: 400;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 5px 10px 0;
+    text-decoration: none;
 }
 
-button:hover {
+.button:hover {
 
     background-color: #005fb2;
     border-color: #005fb2;

@@ -1,6 +1,7 @@
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { GuiColumn, GuiDataType, GuiGridComponent, GuiPaging, GuiPagingDisplay, GuiRowSelection, GuiRowSelectionMode, GuiRowSelectionType, GuiSelectedRow, GuiSorting } from '@generic-ui/ngx-grid';
 import { DriversService } from '../services/drivers.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-drivers',
@@ -57,6 +58,8 @@ export class DriversComponent implements OnInit, AfterViewInit {
   constructor(service: DriversService) {
     this.service = service;
   }
+
+  csvlink: string = environment.API_URL + '/csv';
 
   ngAfterViewInit(): void {
 
