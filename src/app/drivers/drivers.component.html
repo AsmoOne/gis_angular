@@ -1,0 +1,14 @@
+<h1>Drivers report</h1>
+<a class="link" routerLink="/trips">Trips</a>
+<button (click)="onClickCalculate($event)">Calculate time</button>
+
+<gui-grid
+#grid
+[columns]="columns" 
+[source]="drivers" 
+[rowSelection]="rowSelection" 
+[loading]="loading" 
+[sorting]="sorting"
+[paging]="pagination"
+(sourceEdited)="onEditSource($event)"
+></gui-grid>

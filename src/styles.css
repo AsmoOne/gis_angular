@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: 0 16px;
+    background-color: #0070d2;
+    border-radius: 0.25rem;
+    border: 1px solid #0070d2;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+
+button:hover {
+
+    background-color: #005fb2;
+    border-color: #005fb2;
+
+}
